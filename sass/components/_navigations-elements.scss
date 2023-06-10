@@ -1,0 +1,243 @@
+ul {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+}
+li {
+  position: absolute;
+  left: 50%;
+  translate: -65px 295px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  scale: 0;
+  visibility: hidden;
+}
+.show-about {
+  background-color: rgb(226, 229, 190);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: showAbout 2000ms ease-in-out normal both;
+}
+@keyframes showAbout {
+  0% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+  60% {
+    scale: 1;
+    translate: -65px 190px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 1;
+    translate: -65px 150px;
+    height: 170px;
+    visibility: visible;
+  }
+}
+.hide-about {
+  background-color: rgb(226, 229, 190);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: hideAbout 2000ms 1800ms ease-in-out normal both;
+}
+@keyframes hideAbout {
+  0% {
+    scale: 1;
+    translate: -65px 150px;
+    height: 170px;
+    visibility: visible;
+  }
+  40% {
+    scale: 1;
+    translate: -65px 190px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+}
+.show-services {
+  background-color: rgb(222, 229, 146);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: showServices 2000ms 600ms ease-in-out normal both;
+}
+@keyframes showServices {
+  0% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+  60% {
+    scale: 1;
+    translate: 30px 295px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 1;
+    translate: 30px 295px;
+    width: 170px;
+    visibility: visible;
+  }
+}
+.hide-services {
+  background-color: rgb(222, 229, 146);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: hideServices 2000ms 1200ms ease-in-out normal both;
+}
+@keyframes hideServices {
+  0% {
+    scale: 1;
+    translate: 30px 295px;
+    width: 170px;
+    visibility: visible;
+  }
+  40% {
+    scale: 1;
+    translate: 30px 295px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+}
+.show-projects {
+  background-color: rgb(212, 221, 104);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: showProjects 2000ms 1200ms ease-in-out normal both;
+}
+@keyframes showProjects {
+  0% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+  60% {
+    scale: 1;
+    translate: -65px 405px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 1;
+    translate: -65px 405px;
+    height: 170px;
+    visibility: visible;
+  }
+}
+.hide-projects {
+  background-color: rgb(212, 221, 104);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: hideProjects 2000ms 600ms ease-in-out normal both;
+}
+@keyframes hideProjects {
+  0% {
+    scale: 1;
+    translate: -65px 405px;
+    height: 170px;
+    visibility: visible;
+  }
+  40% {
+    scale: 1;
+    translate: -65px 405px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+}
+.show-contacts {
+  background-color: rgb(203, 216, 58);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: showContacts 2000ms 1800ms ease-in-out normal both;
+}
+@keyframes showContacts {
+  0% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+  60% {
+    scale: 1;
+    translate: -180px 295px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 1;
+    translate: -200px 295px;
+    width: 170px;
+    visibility: visible;
+  }
+}
+.hide-contacts {
+  background-color: rgb(203, 216, 58);
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: rgb(213, 6, 6);
+  }
+  animation: hideContacts 2000ms ease-in-out normal both;
+}
+@keyframes hideContacts {
+  0% {
+    scale: 1;
+    translate: -200px 295px;
+    width: 170px;
+    visibility: visible;
+  }
+  40% {
+    scale: 1;
+    translate: -180px 295px;
+    visibility: visible;
+  }
+
+  100% {
+    scale: 0;
+    translate: -65px 295px;
+    visibility: hidden;
+  }
+}

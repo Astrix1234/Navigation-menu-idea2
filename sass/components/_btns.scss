@@ -1,0 +1,41 @@
+.btn-open {
+  position: absolute;
+  left: 50%;
+  translate: -50% 350px;
+  background-color: transparent;
+  border: none;
+  scale: 2;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  cursor: pointer;
+  transition: visibility 2000ms ease-in-out, scale 2000ms ease-in-out,
+    opacity 2000ms ease-in-out;
+  z-index: 10;
+}
+.btn-clouse {
+  @extend .btn-open;
+  translate: -50% 355px;
+}
+.btn-open .icon-open-menu {
+  fill: rgb(226, 229, 190);
+  transition: fill 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    fill: rgb(233, 249, 56);
+  }
+}
+.btn-clouse .icon-clouse-menu {
+  fill: rgb(226, 229, 190);
+  transition: fill 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    fill: rgb(233, 249, 56);
+  }
+}
+
+.is-hidden {
+  scale: 0;
+  visibility: hidden;
+  opacity: 0;
+}
